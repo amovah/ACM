@@ -54,10 +54,9 @@ def answer(list, t):
         result[0] = index
         for i in range(index, len(list)):
             sum = sum + list[i]
-            if sum > t:
-                break
             if sum == t:
                 result[1] = i
+            if sum >= t:
                 break
         if sum == t:
             break
@@ -67,4 +66,4 @@ def answer(list, t):
 
     return result
 
-print(answer([4, 3, 5, 7, 8], 12))
+print(answer([4, 3, 5, 7, 8], 66))
