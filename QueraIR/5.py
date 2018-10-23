@@ -11,10 +11,25 @@ def answer(first, second, totalSum):
     totalSum = [int(x) for x in str(totalSum)]
     totalSum.reverse()
 
+    results = []
 
+    firstColumn = 0
+    while True:
+        result = columnAddition(first, second, totalSum, firstColumn)
+        results.append(result['count'])
+        if result['usedColumn'] == -1:
+            break
+        else:
+            firstColumn = result['usedColumn'] + 1
+
+    return min(results)
+
+
+def columnAddition(first, second, totalSum, firstColumn = 0):
     stack = 0
-    count = 0
-    for i in range(len(first)):
+    count = firstColumn
+    usedColumn = -1
+    for i in range(firstColumn, len(first)):
         sum = str(first[i] + second[i])
         if len(sum) == 1:
             sum = '0' + sum
@@ -23,11 +38,15 @@ def answer(first, second, totalSum):
 
         if (sum[0] + stack) == totalSum[i]:
             stack = sum[1]
+            if usedColumn == -1:
+                usedColumn = i
         else:
             count = count + 1
 
-
-    return count
+    return {
+        'count': count,
+        'usedColumn': usedColumn
+    }
 
 result = []
 while(input() != '0'):
