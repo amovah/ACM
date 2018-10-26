@@ -1,0 +1,12 @@
+{
+  "name": "ACM",
+  "version": "1.0.0",
+  "repository": "git@github.com:amovah/ACM.git",
+  "author": "Ali Movahedi <ali_movahedi@aol.com>",
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}
