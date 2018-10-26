@@ -13,10 +13,6 @@ class Vertex {
     });
   }
 
-  getWeight(id) {
-    return this.neighbors.find(vertex => vertex.id === id).weight;
-  }
-
   reset() {
     this.dist = Infinity;
     this.prev = undefined;
