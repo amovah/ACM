@@ -77,7 +77,7 @@ graph.addConnection(f.id, a.id, 14);
 
 function dijkstra(graph, source, target) { // eslint-disable-line
   // create queue
-  const queue = graph.vertices.slice().map(i => i.id);
+  const queue = graph.vertices.map(i => i.id);
   // initalizing
   graph.reset();
   graph.getVertex(source).dist = 0; // eslint-disable-line
