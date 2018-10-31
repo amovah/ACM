@@ -13,8 +13,8 @@ def seq(start):
     return 1 + seq(answer)
 
 def answer(beginning, ending):
-    if beginning % 2 == 0:
-        beginning = beginning + 1
+    # if beginning % 2 == 0:
+    #     beginning = beginning + 1
 
     result = []
     for i in range(beginning, ending):
@@ -22,4 +22,7 @@ def answer(beginning, ending):
 
     return max(result)
 
-print(answer(900, 1000))
+all = input().split(' ')
+first = int(input())
+second = int(input())
+print(first, second, answer(first, second))

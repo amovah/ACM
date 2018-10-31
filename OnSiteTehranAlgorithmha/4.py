@@ -1,6 +1,8 @@
 # problem: http://www.algorithmha.ir/%D9%85%D8%B3%D8%A6%D9%84%D9%87-%D8%A7%D9%84%DA%AF%D9%88%D8%B1%DB%8C%D8%AA%D9%85%DB%8C/%D9%85%D8%B3%D8%A7%D9%84%D9%87-Gholam-Simple-Game/
 # solution: it's mine
 
+import sys
+
 def salvation(kashis, steps):
     currentPos = 0
     direction = 0
@@ -25,10 +27,10 @@ def salvation(kashis, steps):
     return count
 
 result = []
-for _ in range(int(input())):
+for _ in range(int(sys.stdin.readline())):
     result.append(salvation(
-        steps = int(input().split(' ')[1]),
-        kashis = [int(x) for x in input().split(' ')]
+        steps = int(sys.stdin.readline().split(' ')[1]),
+        kashis = [int(x) for x in sys.stdin.readline().split(' ')]
     ))
 
 for x in result:
