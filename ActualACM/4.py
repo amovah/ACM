@@ -1,7 +1,7 @@
 # problem: http://www.algorithmha.ir/%D9%85%D8%B3%D8%A6%D9%84%D9%87-%D8%A7%D9%84%DA%AF%D9%88%D8%B1%DB%8C%D8%AA%D9%85%DB%8C/%D9%85%D8%B3%D8%A7%D9%84%D9%87-Gholam-Simple-Game/
 # solution: it's mine
 
-def salvation(kashis, steps):
+def salvation(steps, kashis):
 	currentPos = 0
 	direction = 0
 	for i in range(len(kashis)):
@@ -26,10 +26,9 @@ def salvation(kashis, steps):
 
 result = []
 for _ in range(int(input())):
-	result.append(salvation(
-		steps = int(input().split(' ')[1]),
-		kashis = [int(x) for x in input().split(' ')]
-	))
+	# result.append(salvation(int(input().split()[1]), [int(x) for x in input().split()]))
+	result.append(salvation(int(input().split()[1]), [1,2,1,1,1,1,1,0]))
+	print([int(x) for x in input().split()])
 
 for x in result:
 	print(x)
