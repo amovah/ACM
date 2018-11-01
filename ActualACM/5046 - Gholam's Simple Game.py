@@ -1,4 +1,5 @@
-# Solution Status: Accepted
+# link: https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3047
+# status: accepted
 
 def salvation(steps, kashis):
 	currentPos = 0

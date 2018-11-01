@@ -1,15 +1,15 @@
-# problem: http://www.algorithmha.ir/%D9%85%D8%B3%D8%A6%D9%84%D9%87-%D8%A7%D9%84%DA%AF%D9%88%D8%B1%DB%8C%D8%AA%D9%85%DB%8C/%D9%85%D8%B3%D8%A7%D9%84%D9%87-Encrypted-SMS/
-# solution: it's mine.
+# link: https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2096
+# status: accepted
 
 keypad = [
-['A', 'B', 'C'],
-['D', 'E', 'F'],
-['G', 'H', 'I'],
-['J', 'K', 'L'],
-['M', 'N', 'O'],
-['P', 'Q', 'R', 'S'],
-['T', 'U', 'V'],
-['W', 'X', 'Y', 'Z']
+	['A', 'B', 'C'],
+	['D', 'E', 'F'],
+	['G', 'H', 'I'],
+	['J', 'K', 'L'],
+	['M', 'N', 'O'],
+	['P', 'Q', 'R', 'S'],
+	['T', 'U', 'V'],
+	['W', 'X', 'Y', 'Z']
 ]
 
 def decrypt(letter, i):
