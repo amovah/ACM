@@ -13,9 +13,6 @@ def seq(start):
 	return 1 + seq(answer)
 
 def answer(beginning, ending):
-    # if beginning % 2 == 0:
-    #     beginning = beginning + 1
-
 	result = []
 	for i in range(beginning, ending):
 		result.append(seq(i))
